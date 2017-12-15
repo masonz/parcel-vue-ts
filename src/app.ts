@@ -1,14 +1,20 @@
 import { Component, Vue } from "vue-property-decorator";
 import template from "./app.vue";
+import fs from 'fs';
 
-import logo from "./assets/logo.png";
+import { bufferToImage } from './utils';
+// import logo from "./assets/logo.png";
+
+const buffer = fs.readFileSync(__dirname + '/assets/logo.png');
+const logo = bufferToImage(buffer);
 
 @Component({
   mixins: [template]
 })
 export default class App extends Vue {
+
   name: string = "Parcel";
-  logo = logo;
+  logo: string = logo;
 
   get essentialLinks(): any[] {
     return [
@@ -26,9 +32,5 @@ export default class App extends Vue {
       { label: "vue-loader", link: "http://vue-loader.vuejs.org/" },
       { label: "awesome-vue", link: "https://github.com/vuejs/awesome-vue" }
     ];
-  }
-
-  mounted() {
-    console.log(this.logo);
   }
 }
