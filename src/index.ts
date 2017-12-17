@@ -1,6 +1,12 @@
-import Vue from "vue";
+import Vue from 'vue';
 import App from './app';
+import router from './router';
 
-const app = new Vue(App);
-
-app.$mount("#app"); // Use '$mount' function take the place of 'el' property
+new Vue({
+    router,
+    render: h => h(App),
+    el: 'app',
+    components: {
+        App
+    }
+});
