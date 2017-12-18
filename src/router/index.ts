@@ -1,22 +1,32 @@
 import Vue from 'vue'
 import Router from 'vue-router';
-import Essential from '../components/essential';
-import Ecosystem from '../components/ecosystem';
 
 Vue.use(Router);
 
-export default new Router({
-    routes: [
-        {
-            name: 'essential',
-            path: '/essential',
-            component: Essential
-        },
-        {
-            name: 'ecosystem',
-            path: '/ecosystem',
-            component: Ecosystem
-        },
-        { path: '*', redirect: '' }
-    ]
-});
+const pages: { [key: string]: Promise<any> } = {
+    essential: import('../components/essential'),
+    ecosystem: import('../components/ecosystem')
+};
+
+let lazyLoad = (name: string) => {
+    return async () => {
+        const component = await pages[name]
+        return component.default
+    }
+}
+
+const routes = [
+    {
+        name: 'essential',
+        path: '/essential',
+        component: lazyLoad('essential')
+    },
+    {
+        name: 'ecosystem',
+        path: '/ecosystem',
+        component: lazyLoad('ecosystem')
+    },
+    { path: '*', redirect: '' }
+]
+
+export default new Router({ routes });
