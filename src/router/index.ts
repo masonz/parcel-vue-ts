@@ -4,14 +4,14 @@ import Router from 'vue-router';
 Vue.use(Router);
 
 const pages: { [key: string]: Promise<any> } = {
-    essential: import('../components/essential'),
-    ecosystem: import('../components/ecosystem')
+    essential: import('../components/essential/essential.vue'),
+    ecosystem: import('../components/ecosystem/ecosystem.vue')
 };
 
 let lazyLoad = (name: string) => {
     return async () => {
         const component = await pages[name]
-        return component.default
+        return component
     }
 }
 

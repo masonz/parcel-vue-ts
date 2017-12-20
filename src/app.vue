@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <img :src="logo">
+    <img src="./assets/logo.png">
     <h1>{{ title }}</h1>
     <router-link tag="button"
                  :to="{ 'name': 'essential' }">
@@ -13,6 +13,15 @@
     <router-view></router-view>
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+
+@Component
+export default class App extends Vue {
+  title: string = "Parcel-Vue-Ts";
+}
+</script>
 
 <style lang="scss">
 .main {
