@@ -1,0 +1,11 @@
+{
+    "json.format.enable": true,
+    "vetur.validation.template": false,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "force-aligned"
+        }
+    },
+    "tslint.autoFixOnSave": true
+}
