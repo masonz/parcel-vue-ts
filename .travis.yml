@@ -7,6 +7,7 @@ cache:
 before_script:
   - npm install
 script:
+  - npm run test
   - npm run build
 deploy:
   local_dir: build
