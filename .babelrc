@@ -1,0 +1,18 @@
+{
+  "env": {
+    "test": {
+      "presets": ["env"],
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "@": "./src"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

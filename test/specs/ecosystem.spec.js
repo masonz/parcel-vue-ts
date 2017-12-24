@@ -1,14 +1,9 @@
-const test = require('ava').test
-const { shallow } = require('vue-test-utils')
-const Ecosystem = require('../../src/components/ecosystem/ecosystem.vue').default
+import { mount } from 'vue-test-utils'
+import Ecosystem from '@/components/ecosystem/ecosystem.vue'
 
-test('ecosystem.vue', t => {
-  const list = [
-    { label: 'vue-router', link: 'http://router.vuejs.org/' },
-    { label: 'vuex', link: 'http://vuex.vuejs.org/' }
-  ]
-  const wrapper = shallow(Ecosystem, {
-    computed: { list: () => list }
+describe('Ecosystem.vue', () => {
+  it('render the correct number of li.', () => {
+    const wrapper = mount(Ecosystem)
+    expect(wrapper.findAll('li').length).toBe(wrapper.vm.list.length)
   })
-  t.is(wrapper.findAll('li').length, 2)
 })

@@ -1,11 +1,12 @@
-const test = require('ava').test
-const shallow = require('vue-test-utils').shallow
-const App = require('../../src/app.vue').default
+import { shallow } from 'vue-test-utils'
+import App from '@/app.vue'
 
-test('App.vue', t => {
-  const title = 'Parcel-Vue-Ts'
-  const wrapper = shallow(App, {
-    data: { title }
+describe('App.vue', () => {
+  it('render corrent title.', () => {
+    const title = 'Parcel-Vue-Ts'
+    const wrapper = shallow(App, {
+      data: { title }
+    })
+    expect(wrapper.find('h1').text()).toBe(title)
   })
-  t.is(wrapper.find('h1').text() === title, true)
 })

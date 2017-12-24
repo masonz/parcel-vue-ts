@@ -1,14 +1,9 @@
-const test = require('ava').test
-const { shallow } = require('vue-test-utils')
-const Essential = require('../../src/components/essential/essential.vue').default
+import { mount } from 'vue-test-utils'
+import Essential from '@/components/essential/essential.vue'
 
-test('ecosystem.vue', t => {
-  const list = [
-    { label: 'vue-router', link: 'http://router.vuejs.org/' },
-    { label: 'vuex', link: 'http://vuex.vuejs.org/' }
-  ]
-  const wrapper = shallow(Essential, {
-    computed: { list: () => list }
+describe('Essential.vue', () => {
+  it('render the correct number of li.', () => {
+    const wrapper = mount(Essential)
+    expect(wrapper.findAll('li').length).toBe(wrapper.vm.list.length)
   })
-  t.is(wrapper.findAll('li').length, 2)
 })
