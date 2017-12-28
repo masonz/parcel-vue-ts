@@ -1,12 +1,12 @@
-import { shallow } from 'vue-test-utils'
+import { mount } from 'vue-test-utils'
 import App from '@/app.vue'
 
 describe('App.vue', () => {
   it('render corrent title.', () => {
-    const title = 'Parcel-Vue-Ts'
-    const wrapper = shallow(App, {
+    const title = 'test'
+    const wrapper = mount(App, {
       data: { title }
     })
-    expect(wrapper.find('h1').text()).toBe(title)
+    expect(wrapper.find('h1').text()).toBe('test')
   })
 })
