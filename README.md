@@ -1,16 +1,18 @@
-# parcel-vue-ts 🚀
+# parcel-vue-ts 📦
 [![Build Status][travis-image]][travis-url]
 [![codecov][codecov-image]][codecov-url]
+[![standard][standard-image]][standard-url]
 > Boilerplate for Vue.js & Typescript, base on Parcel bundler.
 
-## What's inside?
+## What's inside? 🗃
 * [Vue2](https://github.com/vuejs/vue)
 * [Vue-Router](https://github.com/vuejs/vue-router)
+* [Vuex](https://github.com/vuejs/vuex)
 * [Typescript](https://github.com/Microsoft/TypeScript)
 * [Jest](https://github.com/facebook/jest)
 * [Parcel bundler](https://github.com/parcel-bundler/parcel)
 
-## Getting Started
+## Getting Started 🚀
 Clone this repository, and run npm install.
 ```
 git clone git@github.com:masonz/parcel-vue-ts.git
@@ -46,3 +48,5 @@ You can preview the result by: https://masonz.github.io/parcel-vue-ts/
 [travis-url]: https://travis-ci.org/masonz/parcel-vue-ts
 [codecov-image]: https://codecov.io/gh/masonz/parcel-vue-ts/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/masonz/parcel-vue-ts
+[standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[standard-url]: https://github.com/standard/standard
