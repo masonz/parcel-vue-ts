@@ -3,28 +3,19 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const pages: { [key: string]: Promise<any> } = {
-  essential: import('../components/essential/essential.vue'),
-  ecosystem: import('../components/ecosystem/ecosystem.vue')
-}
-
-let lazyLoad = (name: string) => {
-  return async () => {
-    const component = await pages[name]
-    return component
-  }
-}
+import essential from '../components/essential/essential.vue'
+import ecosystem from '../components/ecosystem/ecosystem.vue'
 
 const routes = [
   {
     name: 'essential',
     path: '/essential',
-    component: lazyLoad('essential')
+    component: essential
   },
   {
     name: 'ecosystem',
     path: '/ecosystem',
-    component: lazyLoad('ecosystem')
+    component: ecosystem
   },
   { path: '*', redirect: '' }
 ]
