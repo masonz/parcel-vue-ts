@@ -4,7 +4,7 @@
   "description": "A minimum Vue.js & TypeScript app with Parcel Bundler.",
   "main": "index.ts",
   "scripts": {
-    "dev": "parcel serve src/index.html -d dist --public-url /dist/ -o",
+    "dev": "parcel serve src/index.html -d dist --public-url /dist/ --open",
     "build": "cross-env NODE_ENV=production parcel build src/index.html -d build --public-url .",
     "clear": "rm -rf .cache/ && rm -rf dist/ && rm -rf build/",
     "test:unit": "jest --no-cache",
