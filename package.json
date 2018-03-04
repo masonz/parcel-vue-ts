@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel serve src/index.html -d dist --public-url /dist/ --open",
     "build": "cross-env NODE_ENV=production parcel build src/index.html -d build --public-url .",
-    "clear": "rimraf .cache/ && rimraf dist/ && rimraf build/",
+    "clean": "rimraf .cache/ && rimraf dist/ && rimraf build/",
     "test:unit": "jest --no-cache",
     "test:coverage": "jest --no-cache --coverage",
     "predeploy": "npm run build"
