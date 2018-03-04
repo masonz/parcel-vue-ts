@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel serve src/index.html -d dist --public-url /dist/ --open",
     "build": "cross-env NODE_ENV=production parcel build src/index.html -d build --public-url .",
-    "clear": "rm -rf .cache/ && rm -rf dist/ && rm -rf build/",
+    "clear": "rimraf .cache/ && rimraf dist/ && rimraf build/",
     "test:unit": "jest --no-cache",
     "test:coverage": "jest --no-cache --coverage",
     "predeploy": "npm run build"
@@ -26,6 +26,7 @@
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.6.2",
     "parcel-plugin-vue": "^1.5.0",
+    "rimraf": "^2.6.2",
     "tslint": "^5.9.1",
     "tslint-config-standard": "^7.0.0",
     "typescript": "^2.7.2",
