@@ -23,6 +23,7 @@
     "cross-env": "^5.1.3",
     "jest": "^22.4.2",
     "jest-serializer-vue": "^0.3.0",
+    "lerna": "^2.9.0",
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.6.2",
     "parcel-plugin-vue": "^1.5.0",
