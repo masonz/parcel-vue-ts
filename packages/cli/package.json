@@ -15,5 +15,8 @@
   },
   "scripts": {
     "init": "node index.js"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -42,15 +42,9 @@
     "vuex": "^3.0.1",
     "vuex-class": "^0.3.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
+  "browserslist": ["> 1%", "last 2 versions"],
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "vue"
-    ],
+    "moduleFileExtensions": ["js", "vue"],
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
       ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
@@ -58,5 +52,8 @@
     "mapCoverage": true,
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
