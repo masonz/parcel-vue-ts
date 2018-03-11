@@ -1,6 +1,6 @@
 {
   "name": "@parcel-vue-ts/cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "parcel-vue-ts command line",
   "main": "index.js",
   "author": "Masonz <masonzone@gmail.com>",
