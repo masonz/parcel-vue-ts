@@ -3,5 +3,16 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.0"
+  "publishConfig": {
+    "ignore": [
+      "node_modules",
+      "log.*"
+    ]
+  },
+  "commands": {
+    "publish": {
+      "allowBranch": "master"
+    }
+  },
+  "version": "independent"
 }

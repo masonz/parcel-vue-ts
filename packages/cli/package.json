@@ -1,0 +1,19 @@
+{
+  "name": "@parcel-vue-ts/cli",
+  "version": "1.0.0",
+  "description": "parcel-vue-ts command line",
+  "main": "index.js",
+  "author": "Masonz <masonzone@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel-vue-ts/template": "^1.0.0",
+    "art-template": "^4.12.2",
+    "chalk": "^2.3.2",
+    "inquirer": "^5.1.0",
+    "ora": "^2.0.0",
+    "shelljs": "^0.8.1"
+  },
+  "scripts": {
+    "init": "node index.js"
+  }
+}

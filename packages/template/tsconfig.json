@@ -8,10 +8,7 @@
     "sourceMap": true,
     "declaration": true,
     "jsx": "preserve",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2017", "dom"],
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -20,12 +17,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "typeRoots": [
-      "./node_modules/@types/",
-      "./typings/"
-    ]
+    "typeRoots": ["./node_modules/@types/", "./typings/"]
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }
