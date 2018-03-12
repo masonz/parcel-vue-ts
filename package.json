@@ -9,6 +9,14 @@
     "lerna": "^2.9.0"
   },
   "scripts": {
-    "init": "node ../packges/cli"
+    "release": "lerna publish --conventional-commits --yes",
+    "test": "lerna exec npm run test:coverage & codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masonz/parcel-vue-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/masonz/parcel-vue-ts/issues"
   }
 }

@@ -3,22 +3,23 @@ node_js:
   - "node"
 cache:
   directories:
-    - node_modules # NPM packages
+    - node_modules
+before_install:
+  - npm install -g codecov lerna
 install:
-  - npm install
-  - npm install -g codecov
+  - lerna exec npm install
 script:
-  - npm run test:unit
-  - npm run build
+  - lerna exec npm run test:unit --scope @parcel-vue-ts/template
+  - lerna exec npm run build --scope @parcel-vue-ts/template
 after_success:
-  - codecov
-deploy:
-  local_dir: build
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  on:
-    branch: master
+  - lerna exec codecov --scope @parcel-vue-ts/template
+# deploy:
+#   local_dir: packages/template/build
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GITHUB_TOKEN
+#   on:
+#     branch: master
 branches:
   only:
     - master
