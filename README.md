@@ -1,7 +1,6 @@
 # parcel-vue-ts 📦
 
-<!-- [![Build Status][travis-image]][travis-url] -->
-
+[![Build Status][travis-image]][travis-url]
 [![codecov][codecov-image]][codecov-url]
 [![standard][standard-image]][standard-url]
 
@@ -37,7 +36,8 @@ npm install -g @parcel-vue-ts/cli
 ### Usage
 
 ```
-cd your directory
+mkdir demo
+cd demo
 parcel-vue-ts       // init project...
 npm install
 ```
