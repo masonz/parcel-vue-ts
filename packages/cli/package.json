@@ -1,10 +1,12 @@
 {
   "name": "@parcel-vue-ts/cli",
   "version": "1.0.2",
-  "description": "parcel-vue-ts command line",
+  "description": "Parcel-vue-ts command line",
   "main": "index.js",
   "author": "Masonz <masonzone@gmail.com>",
   "license": "MIT",
+  "repository": "https://github.com/masonz/parcel-vue-ts/tree/master/packages/cli",
+  "keywords": ["parcel-vue-ts", "cli"],
   "scripts": {
     "init": "node index.js"
   },
