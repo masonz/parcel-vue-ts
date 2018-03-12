@@ -54,6 +54,9 @@ jspm_packages/
 # dotenv environment variables file
 .env
 
+# lock filen
+package-lock.json
+
 # Optional parcel cache directory
 dist/
 build/
