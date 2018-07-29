@@ -9,7 +9,7 @@
 |                Name                 |     Status      | Description  |
 | :---------------------------------: | :-------------: | :----------- |
 |      [@parcel-vue-ts/cli][cli]      |   ![cli-npm]    | command line |
-| [@parcel-vue-ts/tempalte][template] | ![template-npm] | template     |
+| [@parcel-vue-ts/template][template] | ![template-npm] | template     |
 
 [cli]: https://github.com/masonz/parcel-vue-ts/tree/master/packages/cli
 [cli-npm]: https://img.shields.io/npm/v/@parcel-vue-ts/cli.svg
