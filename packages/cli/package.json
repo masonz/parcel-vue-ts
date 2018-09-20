@@ -10,6 +10,9 @@
     "parcel-vue-ts",
     "cli"
   ],
+  "bin": {
+    "parcel-vue-ts": "./index.js"
+  },
   "scripts": {
     "init": "node index.js"
   },
